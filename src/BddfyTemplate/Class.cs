@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 $if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
 $endif$using System.Text;
-using System.Threading;
+using NUnit.Framework;
+using TestStack.BDDfy;
 
 namespace $rootnamespace$
 {   
@@ -12,7 +12,7 @@ namespace $rootnamespace$
         SoThat = "$StorySoThat$")]
 	public class $safeitemrootname$
 	{
-        [Setup]
+        [SetUp]
         public void SetUp()
 	    {
 	        

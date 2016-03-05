@@ -78,21 +78,21 @@
             // 
             this.StoryAsATextBox.Location = new System.Drawing.Point(188, 31);
             this.StoryAsATextBox.Name = "StoryAsATextBox";
-            this.StoryAsATextBox.Size = new System.Drawing.Size(300, 20);
+            this.StoryAsATextBox.Size = new System.Drawing.Size(520, 20);
             this.StoryAsATextBox.TabIndex = 3;
             // 
             // StoryIWantTextBox
             // 
             this.StoryIWantTextBox.Location = new System.Drawing.Point(188, 65);
             this.StoryIWantTextBox.Name = "StoryIWantTextBox";
-            this.StoryIWantTextBox.Size = new System.Drawing.Size(300, 20);
+            this.StoryIWantTextBox.Size = new System.Drawing.Size(520, 20);
             this.StoryIWantTextBox.TabIndex = 4;
             // 
             // StorySoThatTextBox
             // 
             this.StorySoThatTextBox.Location = new System.Drawing.Point(188, 99);
             this.StorySoThatTextBox.Name = "StorySoThatTextBox";
-            this.StorySoThatTextBox.Size = new System.Drawing.Size(300, 20);
+            this.StorySoThatTextBox.Size = new System.Drawing.Size(520, 20);
             this.StorySoThatTextBox.TabIndex = 5;
             // 
             // button1
@@ -118,14 +118,14 @@
             // 
             this.MainScenarioMethodTextBox.Location = new System.Drawing.Point(188, 138);
             this.MainScenarioMethodTextBox.Name = "MainScenarioMethodTextBox";
-            this.MainScenarioMethodTextBox.Size = new System.Drawing.Size(300, 20);
+            this.MainScenarioMethodTextBox.Size = new System.Drawing.Size(520, 20);
             this.MainScenarioMethodTextBox.TabIndex = 8;
             // 
             // ScenarioTitleTextBox
             // 
             this.ScenarioTitleTextBox.Location = new System.Drawing.Point(188, 174);
             this.ScenarioTitleTextBox.Name = "ScenarioTitleTextBox";
-            this.ScenarioTitleTextBox.Size = new System.Drawing.Size(300, 20);
+            this.ScenarioTitleTextBox.Size = new System.Drawing.Size(520, 20);
             this.ScenarioTitleTextBox.TabIndex = 10;
             // 
             // label1
@@ -168,21 +168,21 @@
             // 
             this.MainActionTextBox.Location = new System.Drawing.Point(188, 256);
             this.MainActionTextBox.Name = "MainActionTextBox";
-            this.MainActionTextBox.Size = new System.Drawing.Size(300, 20);
+            this.MainActionTextBox.Size = new System.Drawing.Size(520, 20);
             this.MainActionTextBox.TabIndex = 14;
             // 
             // MainArrangementTextBox
             // 
             this.MainArrangementTextBox.Location = new System.Drawing.Point(188, 230);
             this.MainArrangementTextBox.Name = "MainArrangementTextBox";
-            this.MainArrangementTextBox.Size = new System.Drawing.Size(300, 20);
+            this.MainArrangementTextBox.Size = new System.Drawing.Size(520, 20);
             this.MainArrangementTextBox.TabIndex = 15;
             // 
             // MainAssertionTextBox
             // 
             this.MainAssertionTextBox.Location = new System.Drawing.Point(188, 282);
             this.MainAssertionTextBox.Name = "MainAssertionTextBox";
-            this.MainAssertionTextBox.Size = new System.Drawing.Size(300, 20);
+            this.MainAssertionTextBox.Size = new System.Drawing.Size(520, 20);
             this.MainAssertionTextBox.TabIndex = 16;
             // 
             // HelperForm
