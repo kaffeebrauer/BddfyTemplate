@@ -9,3 +9,13 @@ BddfyVsix: Contains the Vsix build configuration in addition with a Winform for 
 
 Prerequisites
   - MS Visual Studio 2013 SDK (for recognising the project type)
+  Project where you want to add the template should ideally have the following referenced libraries (for ease of use)
+  - BDDfy (https://www.nuget.org/packages/TestStack.BDDfy/)
+  - NUnit (https://www.nuget.org/packages/NUnit/)
+
+Instruction
+  - Download the VSIX under the dist folder
+  - Double-click on the downloaded VSIX file to install the extension
+  - Restart Visual Studio 
+  - Do you add a new item on a project
+  - Item should appear under Visual C# items with name 'Bddfy Unit Test Template'
