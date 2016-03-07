@@ -6,3 +6,6 @@ Contains two projects
 BddfyTemplate: Contains the item template in the Class.cs
 
 BddfyVsix: Contains the Vsix build configuration in addition with a Winform for setting up class variables.
+
+Prerequisites
+  - MS Visual Studio 2013 SDK (for recognising the project type)
