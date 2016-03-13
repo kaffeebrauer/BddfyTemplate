@@ -10,7 +10,7 @@ namespace $rootnamespace$
     [Story(AsA = "$StoryAs$",
         IWant = "$StoryIWant$",
         SoThat = "$StorySoThat$")]
-	public class $safeitemrootname$
+	public class $safeitemrootname$ $ImplementedClass$
 	{
         [SetUp]
         public void SetUp()

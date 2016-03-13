@@ -38,7 +38,16 @@ namespace BddfyVsix
             replacementsDictionary.Add("$MainArrangement$", form.MainArrangementTextBox.Text);
             replacementsDictionary.Add("$MainAct$", form.MainActionTextBox.Text);
             replacementsDictionary.Add("$MainAssertion$", form.MainAssertionTextBox.Text);
-            
+
+            if(form.IsUseBaseTest.Checked)
+            {
+                var interfacingClass = string.Format(": {0}<{1}>", form.BaseTestClassNameTextBox.Text, form.ImplementedClassTextBox.Text);
+                replacementsDictionary.Add("$ImplementedClass$", interfacingClass);
+            } 
+            else
+            {
+                replacementsDictionary.Add("$ImplementedClass$", string.Empty);
+            }
         }
 
         /// <summary>

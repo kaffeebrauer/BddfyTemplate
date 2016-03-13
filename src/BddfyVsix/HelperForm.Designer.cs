@@ -45,6 +45,15 @@
             this.MainActionTextBox = new System.Windows.Forms.TextBox();
             this.MainArrangementTextBox = new System.Windows.Forms.TextBox();
             this.MainAssertionTextBox = new System.Windows.Forms.TextBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.IsUseBaseTest = new System.Windows.Forms.CheckBox();
+            this.BaseTestClassNameTextBox = new System.Windows.Forms.TextBox();
+            this.BaseTestClassNameLabel = new System.Windows.Forms.Label();
+            this.ImplementedClassTextBox = new System.Windows.Forms.TextBox();
+            this.ImplementedClassLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AsALabel
@@ -185,11 +194,69 @@
             this.MainAssertionTextBox.Size = new System.Drawing.Size(520, 20);
             this.MainAssertionTextBox.TabIndex = 16;
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(9, 15);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.ImplementedClassLabel);
+            this.splitContainer1.Panel2.Controls.Add(this.ImplementedClassTextBox);
+            this.splitContainer1.Panel2.Controls.Add(this.BaseTestClassNameTextBox);
+            this.splitContainer1.Panel2.Controls.Add(this.BaseTestClassNameLabel);
+            this.splitContainer1.Panel2.Controls.Add(this.IsUseBaseTest);
+            this.splitContainer1.Size = new System.Drawing.Size(1187, 326);
+            this.splitContainer1.SplitterDistance = 719;
+            this.splitContainer1.TabIndex = 17;
+            // 
+            // IsUseBaseTest
+            // 
+            this.IsUseBaseTest.AutoSize = true;
+            this.IsUseBaseTest.Location = new System.Drawing.Point(13, 16);
+            this.IsUseBaseTest.Name = "IsUseBaseTest";
+            this.IsUseBaseTest.Size = new System.Drawing.Size(156, 17);
+            this.IsUseBaseTest.TabIndex = 0;
+            this.IsUseBaseTest.Text = "Test Inherit From Base Test";
+            this.IsUseBaseTest.UseVisualStyleBackColor = true;
+            // 
+            // BaseTestClassNameTextBox
+            // 
+            this.BaseTestClassNameTextBox.Location = new System.Drawing.Point(113, 47);
+            this.BaseTestClassNameTextBox.Name = "BaseTestClassNameTextBox";
+            this.BaseTestClassNameTextBox.Size = new System.Drawing.Size(288, 20);
+            this.BaseTestClassNameTextBox.TabIndex = 6;
+            // 
+            // BaseTestClassNameLabel
+            // 
+            this.BaseTestClassNameLabel.AutoSize = true;
+            this.BaseTestClassNameLabel.Location = new System.Drawing.Point(9, 50);
+            this.BaseTestClassNameLabel.Name = "BaseTestClassNameLabel";
+            this.BaseTestClassNameLabel.Size = new System.Drawing.Size(98, 13);
+            this.BaseTestClassNameLabel.TabIndex = 5;
+            this.BaseTestClassNameLabel.Text = "Name of Base Test";
+            // 
+            // ImplementedClassTextBox
+            // 
+            this.ImplementedClassTextBox.Location = new System.Drawing.Point(113, 81);
+            this.ImplementedClassTextBox.Name = "ImplementedClassTextBox";
+            this.ImplementedClassTextBox.Size = new System.Drawing.Size(288, 20);
+            this.ImplementedClassTextBox.TabIndex = 7;
+            // 
+            // ImplementedClassLabel
+            // 
+            this.ImplementedClassLabel.AutoSize = true;
+            this.ImplementedClassLabel.Location = new System.Drawing.Point(12, 84);
+            this.ImplementedClassLabel.Name = "ImplementedClassLabel";
+            this.ImplementedClassLabel.Size = new System.Drawing.Size(95, 13);
+            this.ImplementedClassLabel.TabIndex = 8;
+            this.ImplementedClassLabel.Text = "Implemented Class";
+            // 
             // HelperForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 387);
+            this.ClientSize = new System.Drawing.Size(1336, 457);
             this.Controls.Add(this.MainAssertionTextBox);
             this.Controls.Add(this.MainArrangementTextBox);
             this.Controls.Add(this.MainActionTextBox);
@@ -207,8 +274,13 @@
             this.Controls.Add(this.SoThatLabel);
             this.Controls.Add(this.IWantLabel);
             this.Controls.Add(this.AsALabel);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "HelperForm";
             this.Text = "Wizard Helper For Creating Bddfy Unit Test";
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +305,11 @@
         public System.Windows.Forms.TextBox MainActionTextBox;
         public System.Windows.Forms.TextBox MainArrangementTextBox;
         public System.Windows.Forms.TextBox MainAssertionTextBox;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        public System.Windows.Forms.TextBox BaseTestClassNameTextBox;
+        private System.Windows.Forms.Label BaseTestClassNameLabel;
+        public System.Windows.Forms.TextBox ImplementedClassTextBox;
+        private System.Windows.Forms.Label ImplementedClassLabel;
+        public System.Windows.Forms.CheckBox IsUseBaseTest;
     }
 }
