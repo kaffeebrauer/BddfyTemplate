@@ -31,15 +31,21 @@ namespace BddfyVsix
             replacementsDictionary.Add("$StoryIWant$", form.StoryIWantTextBox.Text);
             replacementsDictionary.Add("$StorySoThat$", form.StorySoThatTextBox.Text);
 
+            replacementsDictionary.Add("$MainArrangementSection$", string.Format("public void {0}() {{ \n }}", form.MainArrangementTextBox.Text));
+            replacementsDictionary.Add("$MainActSection$", string.Format("public void {0}() {{ \n }}", form.MainActionTextBox.Text));
+            replacementsDictionary.Add("$MainAssertionSection$", string.Format("public void {0}() {{ \n }}", form.MainAssertionTextBox.Text));
+
             replacementsDictionary.Add("$MainScenarioMethod$", form.MainScenarioMethodTextBox.Text);
+            //TODO: perhap use Humanizr to format this?
+
+            replacementsDictionary.Add("$MainArrangementStatements$", string.Format("this.Given(_ => {0}())", form.MainArrangementTextBox.Text));
+            replacementsDictionary.Add("$MainAct$", form.MainActionTextBox.Text);
+            replacementsDictionary.Add("$MainAssertionStatements$", string.Format(".Then(_ => {0}())", form.MainAssertionTextBox.Text));
             replacementsDictionary.Add("$ScenarioTitle$", form.ScenarioTitleTextBox.Text);
 
-            //TODO: perhap use Humanizr to format this?
-            replacementsDictionary.Add("$MainArrangement$", form.MainArrangementTextBox.Text);
-            replacementsDictionary.Add("$MainAct$", form.MainActionTextBox.Text);
-            replacementsDictionary.Add("$MainAssertion$", form.MainAssertionTextBox.Text);
-
-            if(form.IsUseBaseTest.Checked)
+            //replacementsDictionary.Add("$MainAssertion$", form.MainAssertionTextBox.Text);
+            var baseClassChecked = form.IsUseBaseTest.Checked;
+            if (baseClassChecked)
             {
                 var interfacingClass = string.Format(": {0}<{1}>", form.BaseTestClassNameTextBox.Text, form.ImplementedClassTextBox.Text);
                 replacementsDictionary.Add("$ImplementedClass$", interfacingClass);

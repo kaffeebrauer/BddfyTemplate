@@ -18,27 +18,18 @@ namespace $rootnamespace$
 	        
 	    }
 
-        private void $MainArrangement$()
-	    {
-	        
-	    }
-
-        private void $MainAct$()
-	    {
-	        
-	    }
-    
-        private void $MainAssertion$()
-	    {
-	        
-	    }
-
+        $MainArrangementSection$
+	    
+        $MainActSection$
+	    
+        $MainAssertionSection$
+	   
         [Test]
         public void $MainScenarioMethod$()
 	    {
-	        this.Given(_ => $MainArrangement$())
+	        $MainArrangementStatements$
                 .When(_ => $MainAct$())
-                .Then(_ => $MainAssertion$())
+                $MainAssertionStatements$
                 .BDDfy("$ScenarioTitle$");
 	    }
 	}
