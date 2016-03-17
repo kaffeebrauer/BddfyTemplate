@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
+using System.Linq;
 
 namespace BddfyVsix
 {
@@ -31,16 +32,16 @@ namespace BddfyVsix
             replacementsDictionary.Add("$StoryIWant$", form.StoryIWantTextBox.Text);
             replacementsDictionary.Add("$StorySoThat$", form.StorySoThatTextBox.Text);
 
-            replacementsDictionary.Add("$MainArrangementSection$", string.Format("public void {0}() {{ \n }}", form.MainArrangementTextBox.Text));
-            replacementsDictionary.Add("$MainActSection$", string.Format("public void {0}() {{ \n }}", form.MainActionTextBox.Text));
-            replacementsDictionary.Add("$MainAssertionSection$", string.Format("public void {0}() {{ \n }}", form.MainAssertionTextBox.Text));
+            replacementsDictionary.Add("$MainArrangementSection$", string.Format("public void {0}() {{ \n }}", form.MainArrangementTextBox.Items[0]));
+            replacementsDictionary.Add("$MainActSection$", string.Format("public void {0}() {{ \n }}", form.MainActionItemTextBox.Text));
+            replacementsDictionary.Add("$MainAssertionSection$", string.Format("public void {0}() {{ \n }}", form.MainAssertionTextBox.Items[0]));
 
             replacementsDictionary.Add("$MainScenarioMethod$", form.MainScenarioMethodTextBox.Text);
             //TODO: perhap use Humanizr to format this?
 
-            replacementsDictionary.Add("$MainArrangementStatements$", string.Format("this.Given(_ => {0}())", form.MainArrangementTextBox.Text));
-            replacementsDictionary.Add("$MainAct$", form.MainActionTextBox.Text);
-            replacementsDictionary.Add("$MainAssertionStatements$", string.Format(".Then(_ => {0}())", form.MainAssertionTextBox.Text));
+            replacementsDictionary.Add("$MainArrangementStatements$", string.Format("this.Given(_ => {0}())", form.MainArrangementTextBox.Items[0]));
+            replacementsDictionary.Add("$MainAct$", form.MainActionItemTextBox.Text);
+            replacementsDictionary.Add("$MainAssertionStatements$", string.Format(".Then(_ => {0}())", form.MainAssertionTextBox.Items[0]));
             replacementsDictionary.Add("$ScenarioTitle$", form.ScenarioTitleTextBox.Text);
 
             //replacementsDictionary.Add("$MainAssertion$", form.MainAssertionTextBox.Text);

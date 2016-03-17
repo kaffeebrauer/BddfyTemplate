@@ -42,16 +42,23 @@
             this.MainArrangementLabel = new System.Windows.Forms.Label();
             this.MainActionLabel = new System.Windows.Forms.Label();
             this.MainAssertionLabel = new System.Windows.Forms.Label();
-            this.MainActionTextBox = new System.Windows.Forms.TextBox();
-            this.MainArrangementTextBox = new System.Windows.Forms.TextBox();
-            this.MainAssertionTextBox = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.IsUseBaseTest = new System.Windows.Forms.CheckBox();
+            this.MainAssertionTextBox = new System.Windows.Forms.ListBox();
+            this.MainArrangementTextBox = new System.Windows.Forms.ListBox();
+            this.ImplementedClassLabel = new System.Windows.Forms.Label();
+            this.ImplementedClassTextBox = new System.Windows.Forms.TextBox();
             this.BaseTestClassNameTextBox = new System.Windows.Forms.TextBox();
             this.BaseTestClassNameLabel = new System.Windows.Forms.Label();
-            this.ImplementedClassTextBox = new System.Windows.Forms.TextBox();
-            this.ImplementedClassLabel = new System.Windows.Forms.Label();
+            this.IsUseBaseTest = new System.Windows.Forms.CheckBox();
+            this.MainArrangementItemTextBox = new System.Windows.Forms.TextBox();
+            this.MainActionItemTextBox = new System.Windows.Forms.TextBox();
+            this.MainAssertionItemTextBox = new System.Windows.Forms.TextBox();
+            this.AddMainArragementButton = new System.Windows.Forms.Button();
+            this.AddMainAssertionButton = new System.Windows.Forms.Button();
+            this.RemoveMainArragementButton = new System.Windows.Forms.Button();
+            this.RemoveMainAssertionButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +113,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 352);
+            this.button1.Location = new System.Drawing.Point(0, 554);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -158,7 +165,7 @@
             // MainActionLabel
             // 
             this.MainActionLabel.AutoSize = true;
-            this.MainActionLabel.Location = new System.Drawing.Point(13, 256);
+            this.MainActionLabel.Location = new System.Drawing.Point(4, 355);
             this.MainActionLabel.Name = "MainActionLabel";
             this.MainActionLabel.Size = new System.Drawing.Size(63, 13);
             this.MainActionLabel.TabIndex = 12;
@@ -167,37 +174,31 @@
             // MainAssertionLabel
             // 
             this.MainAssertionLabel.AutoSize = true;
-            this.MainAssertionLabel.Location = new System.Drawing.Point(13, 282);
+            this.MainAssertionLabel.Location = new System.Drawing.Point(4, 382);
             this.MainAssertionLabel.Name = "MainAssertionLabel";
             this.MainAssertionLabel.Size = new System.Drawing.Size(76, 13);
             this.MainAssertionLabel.TabIndex = 13;
             this.MainAssertionLabel.Text = "Main Assertion";
             // 
-            // MainActionTextBox
-            // 
-            this.MainActionTextBox.Location = new System.Drawing.Point(188, 256);
-            this.MainActionTextBox.Name = "MainActionTextBox";
-            this.MainActionTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainActionTextBox.TabIndex = 14;
-            // 
-            // MainArrangementTextBox
-            // 
-            this.MainArrangementTextBox.Location = new System.Drawing.Point(188, 230);
-            this.MainArrangementTextBox.Name = "MainArrangementTextBox";
-            this.MainArrangementTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainArrangementTextBox.TabIndex = 15;
-            // 
-            // MainAssertionTextBox
-            // 
-            this.MainAssertionTextBox.Location = new System.Drawing.Point(188, 282);
-            this.MainAssertionTextBox.Name = "MainAssertionTextBox";
-            this.MainAssertionTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainAssertionTextBox.TabIndex = 16;
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Location = new System.Drawing.Point(9, 15);
             this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.RemoveMainAssertionButton);
+            this.splitContainer1.Panel1.Controls.Add(this.RemoveMainArragementButton);
+            this.splitContainer1.Panel1.Controls.Add(this.AddMainAssertionButton);
+            this.splitContainer1.Panel1.Controls.Add(this.AddMainArragementButton);
+            this.splitContainer1.Panel1.Controls.Add(this.MainAssertionItemTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.MainActionItemTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.MainArrangementItemTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.MainAssertionTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.MainArrangementTextBox);
+            this.splitContainer1.Panel1.Controls.Add(this.MainActionLabel);
+            this.splitContainer1.Panel1.Controls.Add(this.MainAssertionLabel);
             // 
             // splitContainer1.Panel2
             // 
@@ -206,19 +207,41 @@
             this.splitContainer1.Panel2.Controls.Add(this.BaseTestClassNameTextBox);
             this.splitContainer1.Panel2.Controls.Add(this.BaseTestClassNameLabel);
             this.splitContainer1.Panel2.Controls.Add(this.IsUseBaseTest);
-            this.splitContainer1.Size = new System.Drawing.Size(1187, 326);
-            this.splitContainer1.SplitterDistance = 719;
+            this.splitContainer1.Size = new System.Drawing.Size(1187, 586);
+            this.splitContainer1.SplitterDistance = 769;
             this.splitContainer1.TabIndex = 17;
             // 
-            // IsUseBaseTest
+            // MainAssertionTextBox
             // 
-            this.IsUseBaseTest.AutoSize = true;
-            this.IsUseBaseTest.Location = new System.Drawing.Point(13, 16);
-            this.IsUseBaseTest.Name = "IsUseBaseTest";
-            this.IsUseBaseTest.Size = new System.Drawing.Size(156, 17);
-            this.IsUseBaseTest.TabIndex = 0;
-            this.IsUseBaseTest.Text = "Test Inherit From Base Test";
-            this.IsUseBaseTest.UseVisualStyleBackColor = true;
+            this.MainAssertionTextBox.FormattingEnabled = true;
+            this.MainAssertionTextBox.Location = new System.Drawing.Point(179, 408);
+            this.MainAssertionTextBox.Name = "MainAssertionTextBox";
+            this.MainAssertionTextBox.Size = new System.Drawing.Size(520, 108);
+            this.MainAssertionTextBox.TabIndex = 19;
+            // 
+            // MainArrangementTextBox
+            // 
+            this.MainArrangementTextBox.FormattingEnabled = true;
+            this.MainArrangementTextBox.Location = new System.Drawing.Point(179, 240);
+            this.MainArrangementTextBox.Name = "MainArrangementTextBox";
+            this.MainArrangementTextBox.Size = new System.Drawing.Size(520, 108);
+            this.MainArrangementTextBox.TabIndex = 17;
+            // 
+            // ImplementedClassLabel
+            // 
+            this.ImplementedClassLabel.AutoSize = true;
+            this.ImplementedClassLabel.Location = new System.Drawing.Point(12, 84);
+            this.ImplementedClassLabel.Name = "ImplementedClassLabel";
+            this.ImplementedClassLabel.Size = new System.Drawing.Size(95, 13);
+            this.ImplementedClassLabel.TabIndex = 8;
+            this.ImplementedClassLabel.Text = "Implemented Class";
+            // 
+            // ImplementedClassTextBox
+            // 
+            this.ImplementedClassTextBox.Location = new System.Drawing.Point(113, 81);
+            this.ImplementedClassTextBox.Name = "ImplementedClassTextBox";
+            this.ImplementedClassTextBox.Size = new System.Drawing.Size(288, 20);
+            this.ImplementedClassTextBox.TabIndex = 7;
             // 
             // BaseTestClassNameTextBox
             // 
@@ -236,38 +259,91 @@
             this.BaseTestClassNameLabel.TabIndex = 5;
             this.BaseTestClassNameLabel.Text = "Name of Base Test";
             // 
-            // ImplementedClassTextBox
+            // IsUseBaseTest
             // 
-            this.ImplementedClassTextBox.Location = new System.Drawing.Point(113, 81);
-            this.ImplementedClassTextBox.Name = "ImplementedClassTextBox";
-            this.ImplementedClassTextBox.Size = new System.Drawing.Size(288, 20);
-            this.ImplementedClassTextBox.TabIndex = 7;
+            this.IsUseBaseTest.AutoSize = true;
+            this.IsUseBaseTest.Location = new System.Drawing.Point(13, 16);
+            this.IsUseBaseTest.Name = "IsUseBaseTest";
+            this.IsUseBaseTest.Size = new System.Drawing.Size(156, 17);
+            this.IsUseBaseTest.TabIndex = 0;
+            this.IsUseBaseTest.Text = "Test Inherit From Base Test";
+            this.IsUseBaseTest.UseVisualStyleBackColor = true;
             // 
-            // ImplementedClassLabel
+            // MainArrangementItemTextBox
             // 
-            this.ImplementedClassLabel.AutoSize = true;
-            this.ImplementedClassLabel.Location = new System.Drawing.Point(12, 84);
-            this.ImplementedClassLabel.Name = "ImplementedClassLabel";
-            this.ImplementedClassLabel.Size = new System.Drawing.Size(95, 13);
-            this.ImplementedClassLabel.TabIndex = 8;
-            this.ImplementedClassLabel.Text = "Implemented Class";
+            this.MainArrangementItemTextBox.Location = new System.Drawing.Point(179, 215);
+            this.MainArrangementItemTextBox.Name = "MainArrangementItemTextBox";
+            this.MainArrangementItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainArrangementItemTextBox.TabIndex = 20;
+            // 
+            // MainActionItemTextBox
+            // 
+            this.MainActionItemTextBox.Location = new System.Drawing.Point(179, 355);
+            this.MainActionItemTextBox.Name = "MainActionItemTextBox";
+            this.MainActionItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainActionItemTextBox.TabIndex = 21;
+            // 
+            // MainAssertionItemTextBox
+            // 
+            this.MainAssertionItemTextBox.Location = new System.Drawing.Point(179, 382);
+            this.MainAssertionItemTextBox.Name = "MainAssertionItemTextBox";
+            this.MainAssertionItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainAssertionItemTextBox.TabIndex = 21;
+            // 
+            // AddMainArragementButton
+            // 
+            this.AddMainArragementButton.Location = new System.Drawing.Point(705, 215);
+            this.AddMainArragementButton.Name = "AddMainArragementButton";
+            this.AddMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AddMainArragementButton.Size = new System.Drawing.Size(18, 20);
+            this.AddMainArragementButton.TabIndex = 22;
+            this.AddMainArragementButton.Text = "+";
+            this.AddMainArragementButton.UseVisualStyleBackColor = true;
+            this.AddMainArragementButton.Click += new System.EventHandler(this.AddMainArragementButton_Click);
+            // 
+            // AddMainAssertionButton
+            // 
+            this.AddMainAssertionButton.Location = new System.Drawing.Point(705, 382);
+            this.AddMainAssertionButton.Name = "AddMainAssertionButton";
+            this.AddMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AddMainAssertionButton.Size = new System.Drawing.Size(18, 20);
+            this.AddMainAssertionButton.TabIndex = 23;
+            this.AddMainAssertionButton.Text = "+";
+            this.AddMainAssertionButton.UseVisualStyleBackColor = true;
+            this.AddMainAssertionButton.Click += new System.EventHandler(this.AddMainAssertionButton_Click);
+            // 
+            // RemoveMainArragementButton
+            // 
+            this.RemoveMainArragementButton.Location = new System.Drawing.Point(705, 241);
+            this.RemoveMainArragementButton.Name = "RemoveMainArragementButton";
+            this.RemoveMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RemoveMainArragementButton.Size = new System.Drawing.Size(18, 20);
+            this.RemoveMainArragementButton.TabIndex = 24;
+            this.RemoveMainArragementButton.Text = "-";
+            this.RemoveMainArragementButton.UseVisualStyleBackColor = true;
+            this.RemoveMainArragementButton.Click += new System.EventHandler(this.RemoveMainArragementButton_Click);
+            // 
+            // RemoveMainAssertionButton
+            // 
+            this.RemoveMainAssertionButton.Location = new System.Drawing.Point(705, 408);
+            this.RemoveMainAssertionButton.Name = "RemoveMainAssertionButton";
+            this.RemoveMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RemoveMainAssertionButton.Size = new System.Drawing.Size(18, 20);
+            this.RemoveMainAssertionButton.TabIndex = 25;
+            this.RemoveMainAssertionButton.Text = "-";
+            this.RemoveMainAssertionButton.UseVisualStyleBackColor = true;
+            this.RemoveMainAssertionButton.Click += new System.EventHandler(this.RemoveMainAssertionButton_Click);
             // 
             // HelperForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 457);
-            this.Controls.Add(this.MainAssertionTextBox);
-            this.Controls.Add(this.MainArrangementTextBox);
-            this.Controls.Add(this.MainActionTextBox);
-            this.Controls.Add(this.MainAssertionLabel);
-            this.Controls.Add(this.MainActionLabel);
+            this.ClientSize = new System.Drawing.Size(1336, 593);
             this.Controls.Add(this.MainArrangementLabel);
             this.Controls.Add(this.ScenarioTitleTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MainScenarioMethodTextBox);
             this.Controls.Add(this.ScenarioMethodLabel);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.StorySoThatTextBox);
             this.Controls.Add(this.StoryIWantTextBox);
             this.Controls.Add(this.StoryAsATextBox);
@@ -277,6 +353,8 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "HelperForm";
             this.Text = "Wizard Helper For Creating Bddfy Unit Test";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -302,14 +380,20 @@
         private System.Windows.Forms.Label MainArrangementLabel;
         private System.Windows.Forms.Label MainActionLabel;
         private System.Windows.Forms.Label MainAssertionLabel;
-        public System.Windows.Forms.TextBox MainActionTextBox;
-        public System.Windows.Forms.TextBox MainArrangementTextBox;
-        public System.Windows.Forms.TextBox MainAssertionTextBox;
         private System.Windows.Forms.SplitContainer splitContainer1;
         public System.Windows.Forms.TextBox BaseTestClassNameTextBox;
         private System.Windows.Forms.Label BaseTestClassNameLabel;
         public System.Windows.Forms.TextBox ImplementedClassTextBox;
         private System.Windows.Forms.Label ImplementedClassLabel;
         public System.Windows.Forms.CheckBox IsUseBaseTest;
+        public System.Windows.Forms.ListBox MainArrangementTextBox;
+        public System.Windows.Forms.ListBox MainAssertionTextBox;
+        public System.Windows.Forms.TextBox MainAssertionItemTextBox;
+        public System.Windows.Forms.TextBox MainActionItemTextBox;
+        public System.Windows.Forms.TextBox MainArrangementItemTextBox;
+        private System.Windows.Forms.Button AddMainArragementButton;
+        private System.Windows.Forms.Button AddMainAssertionButton;
+        private System.Windows.Forms.Button RemoveMainArragementButton;
+        private System.Windows.Forms.Button RemoveMainAssertionButton;
     }
 }
