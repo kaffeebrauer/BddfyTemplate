@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace BddfyVsix
@@ -12,7 +13,115 @@ namespace BddfyVsix
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            var isValid = true;
+            //Check if all mandatory fields have values, if not set border as red.
+            if (string.IsNullOrWhiteSpace(StoryAsATextBox.Text))
+            {
+                StoryAsATextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                StoryAsATextBox.BackColor = Color.White;
+            }
+
+            if (string.IsNullOrWhiteSpace(StoryIWantTextBox.Text))
+            {
+                StoryIWantTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                StoryIWantTextBox.BackColor = Color.White;
+            }
+
+            if (string.IsNullOrWhiteSpace(StorySoThatTextBox.Text))
+            {
+                StorySoThatTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                StorySoThatTextBox.BackColor = Color.White;
+            }
+            
+            if (string.IsNullOrWhiteSpace(MainScenarioMethodTextBox.Text))
+            {
+                MainScenarioMethodTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                MainScenarioMethodTextBox.BackColor = Color.White;
+            }
+            
+
+            if (string.IsNullOrWhiteSpace(ScenarioTitleTextBox.Text))
+            {
+                ScenarioTitleTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                ScenarioTitleTextBox.BackColor = Color.White;
+            }
+
+            if (string.IsNullOrWhiteSpace(MainActionItemTextBox.Text))
+            {
+                MainActionItemTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                MainActionItemTextBox.BackColor = Color.White;
+            }
+
+
+            if (IsUseBaseTest.Checked && string.IsNullOrWhiteSpace(BaseTestClassNameTextBox.Text))
+            {
+                BaseTestClassNameTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                BaseTestClassNameTextBox.BackColor = Color.White;
+            }
+
+            if (IsUseBaseTest.Checked && string.IsNullOrWhiteSpace(ImplementedClassTextBox.Text))
+            {
+                ImplementedClassTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                ImplementedClassTextBox.BackColor = Color.White;
+            }
+
+            if (MainArrangementTextBox.Items.Count == 0)
+            {
+                MainArrangementTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                MainArrangementTextBox.BackColor = Color.White;
+            }
+
+            if (MainAssertionTextBox.Items.Count == 0)
+            {
+                MainAssertionTextBox.BackColor = Color.Red;
+                isValid = false;
+            }
+            else
+            {
+                MainAssertionTextBox.BackColor = Color.White; 
+
+            }
+
+            if(isValid)
+            {
+                Close();
+            }
         }
 
         private void AddMainArragementButton_Click(object sender, EventArgs e)

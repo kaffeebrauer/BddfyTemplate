@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
-using System.Linq;
-using System.Reflection.Emit;
 
 namespace BddfyVsix
 {

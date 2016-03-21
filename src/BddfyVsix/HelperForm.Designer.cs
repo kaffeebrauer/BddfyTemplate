@@ -43,6 +43,13 @@
             this.MainActionLabel = new System.Windows.Forms.Label();
             this.MainAssertionLabel = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.RemoveMainAssertionButton = new System.Windows.Forms.Button();
+            this.RemoveMainArragementButton = new System.Windows.Forms.Button();
+            this.AddMainAssertionButton = new System.Windows.Forms.Button();
+            this.AddMainArragementButton = new System.Windows.Forms.Button();
+            this.MainAssertionItemTextBox = new System.Windows.Forms.TextBox();
+            this.MainActionItemTextBox = new System.Windows.Forms.TextBox();
+            this.MainArrangementItemTextBox = new System.Windows.Forms.TextBox();
             this.MainAssertionTextBox = new System.Windows.Forms.ListBox();
             this.MainArrangementTextBox = new System.Windows.Forms.ListBox();
             this.ImplementedClassLabel = new System.Windows.Forms.Label();
@@ -50,13 +57,6 @@
             this.BaseTestClassNameTextBox = new System.Windows.Forms.TextBox();
             this.BaseTestClassNameLabel = new System.Windows.Forms.Label();
             this.IsUseBaseTest = new System.Windows.Forms.CheckBox();
-            this.MainArrangementItemTextBox = new System.Windows.Forms.TextBox();
-            this.MainActionItemTextBox = new System.Windows.Forms.TextBox();
-            this.MainAssertionItemTextBox = new System.Windows.Forms.TextBox();
-            this.AddMainArragementButton = new System.Windows.Forms.Button();
-            this.AddMainAssertionButton = new System.Windows.Forms.Button();
-            this.RemoveMainArragementButton = new System.Windows.Forms.Button();
-            this.RemoveMainAssertionButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -99,6 +99,7 @@
             // 
             // StoryIWantTextBox
             // 
+            this.StoryIWantTextBox.Cursor = System.Windows.Forms.Cursors.No;
             this.StoryIWantTextBox.Location = new System.Drawing.Point(188, 65);
             this.StoryIWantTextBox.Name = "StoryIWantTextBox";
             this.StoryIWantTextBox.Size = new System.Drawing.Size(520, 20);
@@ -211,6 +212,71 @@
             this.splitContainer1.SplitterDistance = 769;
             this.splitContainer1.TabIndex = 17;
             // 
+            // RemoveMainAssertionButton
+            // 
+            this.RemoveMainAssertionButton.Location = new System.Drawing.Point(705, 408);
+            this.RemoveMainAssertionButton.Name = "RemoveMainAssertionButton";
+            this.RemoveMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RemoveMainAssertionButton.Size = new System.Drawing.Size(18, 20);
+            this.RemoveMainAssertionButton.TabIndex = 25;
+            this.RemoveMainAssertionButton.Text = "-";
+            this.RemoveMainAssertionButton.UseVisualStyleBackColor = true;
+            this.RemoveMainAssertionButton.Click += new System.EventHandler(this.RemoveMainAssertionButton_Click);
+            // 
+            // RemoveMainArragementButton
+            // 
+            this.RemoveMainArragementButton.Location = new System.Drawing.Point(705, 241);
+            this.RemoveMainArragementButton.Name = "RemoveMainArragementButton";
+            this.RemoveMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RemoveMainArragementButton.Size = new System.Drawing.Size(18, 20);
+            this.RemoveMainArragementButton.TabIndex = 24;
+            this.RemoveMainArragementButton.Text = "-";
+            this.RemoveMainArragementButton.UseVisualStyleBackColor = true;
+            this.RemoveMainArragementButton.Click += new System.EventHandler(this.RemoveMainArragementButton_Click);
+            // 
+            // AddMainAssertionButton
+            // 
+            this.AddMainAssertionButton.Location = new System.Drawing.Point(705, 382);
+            this.AddMainAssertionButton.Name = "AddMainAssertionButton";
+            this.AddMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AddMainAssertionButton.Size = new System.Drawing.Size(18, 20);
+            this.AddMainAssertionButton.TabIndex = 23;
+            this.AddMainAssertionButton.Text = "+";
+            this.AddMainAssertionButton.UseVisualStyleBackColor = true;
+            this.AddMainAssertionButton.Click += new System.EventHandler(this.AddMainAssertionButton_Click);
+            // 
+            // AddMainArragementButton
+            // 
+            this.AddMainArragementButton.Location = new System.Drawing.Point(705, 215);
+            this.AddMainArragementButton.Name = "AddMainArragementButton";
+            this.AddMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AddMainArragementButton.Size = new System.Drawing.Size(18, 20);
+            this.AddMainArragementButton.TabIndex = 22;
+            this.AddMainArragementButton.Text = "+";
+            this.AddMainArragementButton.UseVisualStyleBackColor = true;
+            this.AddMainArragementButton.Click += new System.EventHandler(this.AddMainArragementButton_Click);
+            // 
+            // MainAssertionItemTextBox
+            // 
+            this.MainAssertionItemTextBox.Location = new System.Drawing.Point(179, 382);
+            this.MainAssertionItemTextBox.Name = "MainAssertionItemTextBox";
+            this.MainAssertionItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainAssertionItemTextBox.TabIndex = 21;
+            // 
+            // MainActionItemTextBox
+            // 
+            this.MainActionItemTextBox.Location = new System.Drawing.Point(179, 355);
+            this.MainActionItemTextBox.Name = "MainActionItemTextBox";
+            this.MainActionItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainActionItemTextBox.TabIndex = 21;
+            // 
+            // MainArrangementItemTextBox
+            // 
+            this.MainArrangementItemTextBox.Location = new System.Drawing.Point(179, 215);
+            this.MainArrangementItemTextBox.Name = "MainArrangementItemTextBox";
+            this.MainArrangementItemTextBox.Size = new System.Drawing.Size(520, 20);
+            this.MainArrangementItemTextBox.TabIndex = 20;
+            // 
             // MainAssertionTextBox
             // 
             this.MainAssertionTextBox.FormattingEnabled = true;
@@ -268,71 +334,6 @@
             this.IsUseBaseTest.TabIndex = 0;
             this.IsUseBaseTest.Text = "Test Inherit From Base Test";
             this.IsUseBaseTest.UseVisualStyleBackColor = true;
-            // 
-            // MainArrangementItemTextBox
-            // 
-            this.MainArrangementItemTextBox.Location = new System.Drawing.Point(179, 215);
-            this.MainArrangementItemTextBox.Name = "MainArrangementItemTextBox";
-            this.MainArrangementItemTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainArrangementItemTextBox.TabIndex = 20;
-            // 
-            // MainActionItemTextBox
-            // 
-            this.MainActionItemTextBox.Location = new System.Drawing.Point(179, 355);
-            this.MainActionItemTextBox.Name = "MainActionItemTextBox";
-            this.MainActionItemTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainActionItemTextBox.TabIndex = 21;
-            // 
-            // MainAssertionItemTextBox
-            // 
-            this.MainAssertionItemTextBox.Location = new System.Drawing.Point(179, 382);
-            this.MainAssertionItemTextBox.Name = "MainAssertionItemTextBox";
-            this.MainAssertionItemTextBox.Size = new System.Drawing.Size(520, 20);
-            this.MainAssertionItemTextBox.TabIndex = 21;
-            // 
-            // AddMainArragementButton
-            // 
-            this.AddMainArragementButton.Location = new System.Drawing.Point(705, 215);
-            this.AddMainArragementButton.Name = "AddMainArragementButton";
-            this.AddMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AddMainArragementButton.Size = new System.Drawing.Size(18, 20);
-            this.AddMainArragementButton.TabIndex = 22;
-            this.AddMainArragementButton.Text = "+";
-            this.AddMainArragementButton.UseVisualStyleBackColor = true;
-            this.AddMainArragementButton.Click += new System.EventHandler(this.AddMainArragementButton_Click);
-            // 
-            // AddMainAssertionButton
-            // 
-            this.AddMainAssertionButton.Location = new System.Drawing.Point(705, 382);
-            this.AddMainAssertionButton.Name = "AddMainAssertionButton";
-            this.AddMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AddMainAssertionButton.Size = new System.Drawing.Size(18, 20);
-            this.AddMainAssertionButton.TabIndex = 23;
-            this.AddMainAssertionButton.Text = "+";
-            this.AddMainAssertionButton.UseVisualStyleBackColor = true;
-            this.AddMainAssertionButton.Click += new System.EventHandler(this.AddMainAssertionButton_Click);
-            // 
-            // RemoveMainArragementButton
-            // 
-            this.RemoveMainArragementButton.Location = new System.Drawing.Point(705, 241);
-            this.RemoveMainArragementButton.Name = "RemoveMainArragementButton";
-            this.RemoveMainArragementButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.RemoveMainArragementButton.Size = new System.Drawing.Size(18, 20);
-            this.RemoveMainArragementButton.TabIndex = 24;
-            this.RemoveMainArragementButton.Text = "-";
-            this.RemoveMainArragementButton.UseVisualStyleBackColor = true;
-            this.RemoveMainArragementButton.Click += new System.EventHandler(this.RemoveMainArragementButton_Click);
-            // 
-            // RemoveMainAssertionButton
-            // 
-            this.RemoveMainAssertionButton.Location = new System.Drawing.Point(705, 408);
-            this.RemoveMainAssertionButton.Name = "RemoveMainAssertionButton";
-            this.RemoveMainAssertionButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.RemoveMainAssertionButton.Size = new System.Drawing.Size(18, 20);
-            this.RemoveMainAssertionButton.TabIndex = 25;
-            this.RemoveMainAssertionButton.Text = "-";
-            this.RemoveMainAssertionButton.UseVisualStyleBackColor = true;
-            this.RemoveMainAssertionButton.Click += new System.EventHandler(this.RemoveMainAssertionButton_Click);
             // 
             // HelperForm
             // 
