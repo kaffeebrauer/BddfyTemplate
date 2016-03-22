@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>926c231c-7c46-4905-867f-6043aa56883f</ProjectGuid>
+    <ProjectGuid>{CA82841D-6005-457F-B5FB-46D17C6EFCCF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BddfyVsix.Test</RootNamespace>
