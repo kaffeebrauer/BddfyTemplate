@@ -22,3 +22,4 @@ Instruction
 
 TODO:
   - enable Humanizer to format the unit test methods
+  - reformat forms to use MVP pattern for ease of testing
