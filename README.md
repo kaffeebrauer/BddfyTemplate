@@ -19,3 +19,7 @@ Instruction
   - Restart Visual Studio 
   - Do you add a new item on a project
   - Item should appear under Visual C# items with name 'Bddfy Unit Test Template'
+
+TODO:
+  - enable Humanizer to format the unit test methods
+  - reformat forms to use MVP pattern for ease of testing
