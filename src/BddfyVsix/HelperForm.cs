@@ -118,7 +118,7 @@ namespace BddfyVsix
 
             }
 
-            if(isValid)
+            if (isValid)
             {
                 Close();
             }
