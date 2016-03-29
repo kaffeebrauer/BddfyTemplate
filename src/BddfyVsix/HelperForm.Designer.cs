@@ -34,7 +34,7 @@
             this.StoryAsATextBox = new System.Windows.Forms.TextBox();
             this.StoryIWantTextBox = new System.Windows.Forms.TextBox();
             this.StorySoThatTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.ScenarioMethodLabel = new System.Windows.Forms.Label();
             this.MainScenarioMethodTextBox = new System.Windows.Forms.TextBox();
             this.ScenarioTitleTextBox = new System.Windows.Forms.TextBox();
@@ -112,15 +112,14 @@
             this.StorySoThatTextBox.Size = new System.Drawing.Size(520, 20);
             this.StorySoThatTextBox.TabIndex = 5;
             // 
-            // button1
+            // SubmitButton
             // 
-            this.button1.Location = new System.Drawing.Point(0, 554);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Confirm!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitButton.Location = new System.Drawing.Point(0, 554);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(75, 23);
+            this.SubmitButton.TabIndex = 6;
+            this.SubmitButton.Text = "Confirm!";
+            this.SubmitButton.UseVisualStyleBackColor = true;
             // 
             // ScenarioMethodLabel
             // 
@@ -195,7 +194,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.MainAssertionItemTextBox);
             this.splitContainer1.Panel1.Controls.Add(this.MainActionItemTextBox);
             this.splitContainer1.Panel1.Controls.Add(this.MainArrangementItemTextBox);
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.SubmitButton);
             this.splitContainer1.Panel1.Controls.Add(this.MainAssertionTextBox);
             this.splitContainer1.Panel1.Controls.Add(this.MainArrangementTextBox);
             this.splitContainer1.Panel1.Controls.Add(this.MainActionLabel);
@@ -221,7 +220,6 @@
             this.RemoveMainAssertionButton.TabIndex = 25;
             this.RemoveMainAssertionButton.Text = "-";
             this.RemoveMainAssertionButton.UseVisualStyleBackColor = true;
-            this.RemoveMainAssertionButton.Click += new System.EventHandler(this.RemoveMainAssertionButton_Click);
             // 
             // RemoveMainArragementButton
             // 
@@ -232,7 +230,6 @@
             this.RemoveMainArragementButton.TabIndex = 24;
             this.RemoveMainArragementButton.Text = "-";
             this.RemoveMainArragementButton.UseVisualStyleBackColor = true;
-            this.RemoveMainArragementButton.Click += new System.EventHandler(this.RemoveMainArragementButton_Click);
             // 
             // AddMainAssertionButton
             // 
@@ -243,7 +240,6 @@
             this.AddMainAssertionButton.TabIndex = 23;
             this.AddMainAssertionButton.Text = "+";
             this.AddMainAssertionButton.UseVisualStyleBackColor = true;
-            this.AddMainAssertionButton.Click += new System.EventHandler(this.AddMainAssertionButton_Click);
             // 
             // AddMainArragementButton
             // 
@@ -254,7 +250,6 @@
             this.AddMainArragementButton.TabIndex = 22;
             this.AddMainArragementButton.Text = "+";
             this.AddMainArragementButton.UseVisualStyleBackColor = true;
-            this.AddMainArragementButton.Click += new System.EventHandler(this.AddMainArragementButton_Click);
             // 
             // MainAssertionItemTextBox
             // 
@@ -373,7 +368,7 @@
         public System.Windows.Forms.TextBox StoryAsATextBox;
         public System.Windows.Forms.TextBox StoryIWantTextBox;
         public System.Windows.Forms.TextBox StorySoThatTextBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Label ScenarioMethodLabel;
         public System.Windows.Forms.TextBox MainScenarioMethodTextBox;
         public System.Windows.Forms.TextBox ScenarioTitleTextBox;
