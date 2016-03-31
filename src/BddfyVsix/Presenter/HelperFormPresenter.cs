@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Windows.Forms;
 using BddfyVsix.Model;
 using BddfyVsix.View;
 
@@ -37,15 +38,29 @@ namespace BddfyVsix.Presenter
         private void ViewOnAddMainAssertionButtonClick(object sender, EventArgs eventArgs)
         {
             var view = (HelperForm) _view;
-            view.MainAssertionTextBox.Items.Add(view.MainAssertionItemTextBox.Text);
-            view.MainAssertionItemTextBox.Clear();
+            if (!string.IsNullOrWhiteSpace(view.MainAssertionItemTextBox.Text))
+            {
+                view.MainAssertionTextBox.Items.Add(view.MainAssertionItemTextBox.Text);
+                view.MainAssertionItemTextBox.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Please provide an input");
+            }
         }
 
         private void ViewOnAddMainArragementButtonClick(object sender, EventArgs eventArgs)
         {
             var view = (HelperForm) _view;
-            view.MainArrangementTextBox.Items.Add(view.MainArrangementItemTextBox.Text);
-            view.MainArrangementItemTextBox.Clear();
+            if (!string.IsNullOrWhiteSpace(view.MainArrangementItemTextBox.Text))
+            { 
+                view.MainArrangementTextBox.Items.Add(view.MainArrangementItemTextBox.Text);
+                view.MainArrangementItemTextBox.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Please provide an input");
+            }
         }
 
         private void ViewOnSubmitButtonClick(object sender, EventArgs eventArgs)
