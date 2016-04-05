@@ -1,9 +1,9 @@
 # BddfyTemplate
 Visual Studio Item Template For Bddfy Tests (NUnit)
 
-Contains two projects
+Contains two projects.
 
-BddfyTemplate: Contains the item template in the Class.cs
+BddfyTemplate: Contains the item template in the Class.cs.
 
 BddfyVsix: Contains the Vsix build configuration in addition with a Winform for setting up class variables.
 
@@ -14,8 +14,8 @@ Prerequisites
   - NUnit (https://www.nuget.org/packages/NUnit/)
 
 Instruction
-  - Download the VSIX under the dist folder
-  - Double-click on the downloaded VSIX file to install the extension
-  - Restart Visual Studio 
-  - Do you add a new item on a project
-  - Item should appear under Visual C# items with name 'Bddfy Unit Test Template'
+  - Download the VSIX under the dist folder.
+  - Double-click on the downloaded VSIX file to install the extension.
+  - Restart Visual Studio.
+  - Do you add a new item on a project.
+  - Item should appear under Visual C# items with name 'Bddfy Unit Test Template'.
