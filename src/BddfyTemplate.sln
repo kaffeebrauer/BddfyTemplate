@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyTemplate", "BddfyTempl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyVsix", "BddfyVsix\BddfyVsix.csproj", "{A142DE7F-5697-4812-B808-0ED72A692A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyForm", "BddfyForm\BddfyForm.csproj", "{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A142DE7F-5697-4812-B808-0ED72A692A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A142DE7F-5697-4812-B808-0ED72A692A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A142DE7F-5697-4812-B808-0ED72A692A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
