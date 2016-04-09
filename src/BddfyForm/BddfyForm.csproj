@@ -44,8 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForm.Designer.cs">
+      <DependentUpon>HelperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HelperFormModel.cs" />
+    <Compile Include="Model\IModel.cs" />
+    <Compile Include="Presenter\HelperFormPresenter.cs" />
+    <Compile Include="Presenter\IPresenter.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\HelperForm.resx">
+    <Compile Include="View\IHelperFormView.cs" />
+    <EmbeddedResource Include="HelperForm.resx">
       <DependentUpon>HelperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -53,12 +65,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\HelperForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Properties\HelperForm.Designer.cs">
-      <DependentUpon>HelperForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>

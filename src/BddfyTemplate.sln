@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyVsix", "BddfyVsix\Bddf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyForm", "BddfyForm\BddfyForm.csproj", "{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddfyForm.Test", "BddfyForm.Test\BddfyForm.Test.csproj", "{EA245A8C-8FE7-41E8-AE28-A85A0347870C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{85C0B061-2794-4CCA-88AC-3314BD9E1C52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5545C07-21E4-4FF4-A3EF-BFDE659F9625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA245A8C-8FE7-41E8-AE28-A85A0347870C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA245A8C-8FE7-41E8-AE28-A85A0347870C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA245A8C-8FE7-41E8-AE28-A85A0347870C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA245A8C-8FE7-41E8-AE28-A85A0347870C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA245A8C-8FE7-41E8-AE28-A85A0347870C} = {85C0B061-2794-4CCA-88AC-3314BD9E1C52}
 	EndGlobalSection
 EndGlobal
