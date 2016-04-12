@@ -368,7 +368,6 @@
         public System.Windows.Forms.TextBox StoryAsATextBox;
         public System.Windows.Forms.TextBox StoryIWantTextBox;
         public System.Windows.Forms.TextBox StorySoThatTextBox;
-        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Label ScenarioMethodLabel;
         public System.Windows.Forms.TextBox MainScenarioMethodTextBox;
         public System.Windows.Forms.TextBox ScenarioTitleTextBox;
@@ -391,5 +390,6 @@
         private System.Windows.Forms.Button AddMainAssertionButton;
         private System.Windows.Forms.Button RemoveMainArragementButton;
         private System.Windows.Forms.Button RemoveMainAssertionButton;
+        public System.Windows.Forms.Button SubmitButton;
     }
 }

@@ -2,5 +2,7 @@
 {
     public interface IPresenter
     {
+        //void OnSubmitButtonClick();
+        //void OnAddMainArragementButtonClick();
     }
 }

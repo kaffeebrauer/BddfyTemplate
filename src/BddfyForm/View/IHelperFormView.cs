@@ -12,5 +12,6 @@ namespace BddfyVsix.View
 
         event EventHandler RemoveMainAssertionButtonClick; 
         void OnPropertyChanged(HelperFormModel model);
+
     }
 }

@@ -63,7 +63,8 @@ namespace BddfyVsix.Presenter
             }
         }
 
-        private void ViewOnSubmitButtonClick(object sender, EventArgs eventArgs)
+
+        public void ViewOnSubmitButtonClick(object sender, EventArgs eventArgs)
         {
             var view = (HelperForm) _view;
             var isValid = true;
