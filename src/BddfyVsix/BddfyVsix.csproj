@@ -79,6 +79,7 @@
     <Compile Include="Presenter\HelperFormPresenter.cs" />
     <Compile Include="Presenter\IPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplacementHelper.cs" />
     <Compile Include="View\IHelperFormView.cs" />
   </ItemGroup>
   <ItemGroup>
