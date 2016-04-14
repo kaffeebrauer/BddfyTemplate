@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
-using BddfyVsix.Model;
+using BddfyForm.Model;
 using BddfyVsix.Presenter;
 using BddfyVsix.View;
 
-namespace BddfyVsix
+namespace BddfyForm
 {
     public partial class HelperForm : Form, IHelperFormView
     {
@@ -16,7 +16,7 @@ namespace BddfyVsix
            
             var model = new HelperFormModel();
             // ReSharper disable once ObjectCreationAsStatement
-            var presenter = new HelperFormPresenter(this, model);
+            new HelperFormPresenter(this, model);
 
             //Register the event handlers
             RemoveMainArragementButton.Click += RemoveMainArragementButtonClick;

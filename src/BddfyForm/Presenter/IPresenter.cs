@@ -1,8 +1,7 @@
-﻿namespace BddfyVsix.Presenter
+﻿namespace BddfyForm.Presenter
 {
     public interface IPresenter
     {
-        //void OnSubmitButtonClick();
-        //void OnAddMainArragementButtonClick();
+
     }
 }

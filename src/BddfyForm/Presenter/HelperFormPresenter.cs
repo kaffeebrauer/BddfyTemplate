@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using BddfyVsix.Model;
+using BddfyForm;
+using BddfyForm.Model;
+using BddfyForm.Presenter;
 using BddfyVsix.View;
 
 namespace BddfyVsix.Presenter

@@ -1,4 +1,4 @@
-﻿namespace BddfyVsix.Model
+﻿namespace BddfyForm.Model
 {
     public interface IModel
     {

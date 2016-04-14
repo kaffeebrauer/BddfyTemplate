@@ -1,4 +1,4 @@
-﻿namespace BddfyVsix
+﻿namespace BddfyForm
 {
     partial class HelperForm
     {

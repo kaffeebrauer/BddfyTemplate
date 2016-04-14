@@ -1,6 +1,6 @@
 ﻿using System;
+using BddfyForm.Model;
 using BddfyVsix;
-using BddfyVsix.Model;
 using BddfyVsix.Presenter;
 using NUnit.Framework;
 

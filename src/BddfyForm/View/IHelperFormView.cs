@@ -1,5 +1,5 @@
 ﻿using System;
-using BddfyVsix.Model;
+using BddfyForm.Model;
 
 namespace BddfyVsix.View
 {
