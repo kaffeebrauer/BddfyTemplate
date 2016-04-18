@@ -1,7 +1,7 @@
 # BddfyTemplate
 Visual Studio Item Template For Bddfy Tests (NUnit)
 
-Contains two projects.
+Contains four projects.
 
 BddfyTemplate: Contains the item template in the Class.cs.
 
